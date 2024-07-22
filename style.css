@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #6200ea;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #03dac6;
+    transform: scale(0.95);
+}
+
+#productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    margin-right: 320px; 
+}
+
+#cartList {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    overflow-y: auto;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+#cartList h2 {
+    margin: 0;
+    padding-bottom: 1rem;
+    text-align: right;
+}
+
+.product, .cartItem {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product:hover, .cartItem:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 120px;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+.product h3, .product p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}

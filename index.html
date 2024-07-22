@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Mahmoud Items</h1>
+        <div>
+            <input type="text" id="search" placeholder="Search by product name">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div>
+            <select id="category">
+                <option value="all">All Categories</option>
+            </select>
+            <button id="filterBtn">Apply Filter</button>
+        </div>
+        <div>
+            <select id="priceSort">
+                <option value="default">Sort by price</option>
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+            <button id="sortBtn">Apply Sort</button>
+        </div>
+    </header>
+    <main>
+        <div id="productList"></div>
+    </main>
+    <footer>
+        <h2>Cart</h2>
+        <div id="cartList"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
